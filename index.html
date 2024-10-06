@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+
+      <link rel="stylesheet" href="indexstyle.css">
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 杨越然</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab"rel="stylesheet"/>
+   <link rel="shortcut icon" type="image/png" href="birthday.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+  </head>
+   <body>
+    <div id="container" style="display:none">
+      <div class="s-2"></div>
+      <div class="card">
+          <div class="sides left-side">
+              <h1 class="profession"> Happy</h1>
+              <h2 class="name">杨 越</h2>
+          </div>
+          <div class="sides right-side">
+              <h1 class="profession"> Birthday</h1>
+              <h2 class="name">然</h2>
+              </div>
+          <div class="back-side">
+              <p class="biography">
+                  当你打开这张卡片时，你已经踏入了一个充满魔法和奇迹的世界。在这个宇宙中，每一颗星星都为你闪耀，每一朵云彩都为你编织着祝福。今天，你的生日，是这个宇宙中最亮的那颗星。我们在这里，用最温柔的笔触，为你写下了一段神秘的祝福。但请记住，真正的魔法，需要你亲自去发现。
+                  请跟随你内心的指引，轻轻触碰下方的按钮，让文字带你穿越时空，去往一个充满爱与希望的地方。
+              </p>
+          </div>
+
+          <button class="button" onClick="window.open('wish.html');">
+              Blessings to you.
+          </button>
+
+          <!-- <a href="wish.html">
+              <button onclick="wish.html" >A Massage For You</button>
+          </a> -->
+      </div>
+      <div class="s-1"></div>
+      <div class="right-col">
+        <img src="images/play.png" id="icon">
+      </div>
+      </div>
+      <span id="count"></span>
+
+     <div class="lording" >
+      <div class="center">
+         <div class="ring"></div>
+         <span>loading...</span>
+      </div>
+    </div>
+<div id="home" class="home-style-2 slider-area" style="display:none">
+
+  <div class="particles-js" id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1366" height="606"></canvas></div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <audio id="hbdmp" autoplay loop >
+
+    <source src="hbd.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    var hbdmp = document.getElementById("hbdmp")
+    var icon = document.getElementById("icon")
+
+    icon.onclick = function(){
+     if(hbdmp.paused){
+       hbdmp.play();
+       icon.src ="images/pause.png";
+     }else{
+       hbdmp.pause();
+       icon.src = "images/play.png";
+     }
+
+    }
+
+  </script>
+  <script>
+
+    setTimeout(function() {
+      $('.lording').hide()
+    }, 5000);
+
+    setTimeout(function() {
+      $('#container').show()
+    }, 5199);
+
+
+    </script>
+
+</body>
+</html>
